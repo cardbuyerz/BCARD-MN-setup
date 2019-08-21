@@ -181,9 +181,9 @@ rpcpassword=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
 
  #Installing Daemon
  cd ~
-wget https://github.com/CARDbuyers/BCARD/releases/download/2.4.0/2.4.0CARDbuyersd.tar.gz
-tar -zxvf 2.4.0CARDbuyersd.tar.gz -C ~/BCARD-MN-setup
-rm -rf 2.4.0CARDbuyersd.tar.gz
+wget https://github.com/cardbuyerz/CARDbuyers/releases/download/2.4.0/2.4.0-CARDbuyersd.tar.gz
+tar -zxvf 2.4.0-CARDbuyersd.tar.gz -C ~/BCARD-MN-setup
+rm -rf 2.4.0-CARDbuyersd.tar.gz
  
  stop_daemon
  
@@ -204,7 +204,7 @@ rm -rf 2.4.0CARDbuyersd.tar.gz
 echo -e "${YELLOW}Creating CARDbuyers.conf...${NC}"
 
 #Deploy Bootstrap files 
-sudo wget https://github.com/CARDbuyers/BCARD/releases/download/2.4.0/2.4.0Bootstrap.tar.gz
+sudo wget https://github.com/cardbuyerz/CARDbuyers/releases/download/2.4.0/2.4.0Bootstrap.tar.gz
 sudo tar -zxvf 2.4.0Bootstrap.tar.gz -C ~/.CARDbuyers
 sudo rm 2.4.0Bootstrap.tar.gz
 
